@@ -9,12 +9,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/your-repo/python-devops-project.git'
-            }
-        }
-
         stage('Setup Python Environment') {
             steps {
                 sh '''
